@@ -28,7 +28,7 @@ Portfolio/
     ├── js/field.js            WebGL "liquid light" background (hand-written shader)
     ├── vendor/lenis.min.js    Lenis 1.3.26 smooth scroll (MIT), LICENSE-lenis.txt next to it
     ├── fonts/                 Self-hosted WOFF2 (Latin subsets) + OFL licence texts
-    └── img/og-image.png       1200x630 social preview (ready, not referenced yet; see below)
+    └── img/og-image.png       1200x630 social preview (used by the og:image and twitter:image tags)
 ```
 
 How it behaves:
@@ -115,5 +115,6 @@ original code for this site.
 - [ ] **Contact form service:** the site has no backend, so the form only opens an email draft. To
       receive submissions directly, connect Formspree, Netlify Forms or Basin and update the note
       above the form.
-- [ ] **Domain tags, once there is a domain:** add `<link rel="canonical">`, `og:url`, `og:image`
-      and `twitter:image` to `<head>`, pointing at `assets/img/og-image.png` (already generated).
+- [ ] **Custom domain** (only if you ever get one): update the address in the `canonical`, `og:url`,
+      `og:image` and `twitter:image` tags and the JSON-LD `url` in `<head>` of `index.html`.
+      They currently point at `https://jinshah0322.github.io/`.
