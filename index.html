@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jinay Shah | Software engineer: ideas and problems into working software</title>
+<meta name="description" content="Jinay Shah turns ideas and problems into working software, end to end and fast, with AI in the loop. Web apps, APIs, AI and LLM features, automation, integrations, data and deployment. Proof of work in backend and AI systems.">
+<meta name="author" content="Jinay Shah">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#07070d" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f1eff8" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jinay Shah | Problem in. Software out.">
+<meta property="og:description" content="Ideas and problems turned into working software, end to end and fast, with AI in the loop. Web apps, APIs, AI features, automation, integrations, data and deployment.">
+<meta property="og:site_name" content="Jinay Shah">
+<meta property="og:locale" content="en_GB">
+<meta property="profile:first_name" content="Jinay">
+<meta property="profile:last_name" content="Shah">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jinay Shah | Problem in. Software out.">
+<meta name="twitter:description" content="Ideas and problems turned into working software, end to end and fast, with AI in the loop. Web apps, APIs, AI features, automation, integrations, data and deployment.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>
+  /* Before first paint: mark JS and apply the saved theme. Storage may be blocked; never throw. */
+  (function () {
+    var d = document.documentElement, t = null;
+    d.className = d.className.replace('no-js', 'js');
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="preload" href="assets/fonts/unbounded-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jinay Shah",
+  "jobTitle": "Software Engineer",
+  "sameAs": [
+    "https://www.linkedin.com/in/shahjinay0322/",
+    "https://github.com/jinshah0322"
+  ]
+}
+</script>
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/cases.js" defer></script>
+<script src="assets/js/palette.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/fx.js" defer></script>
+<script src="assets/js/field.js" defer></script>
+</head>
+<body>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-prism" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b7bff"/><stop offset=".55" stop-color="#ff5fd2"/><stop offset="1" stop-color="#3fe0ff"/>
+    </linearGradient>
+    <symbol id="i-mark" viewBox="0 0 48 48"><path d="M30 9v19.5a9.5 9.5 0 0 1-19 0" fill="none" stroke="url(#g-prism)" stroke-width="5.5" stroke-linecap="round"/><circle cx="37" cy="37" r="4" fill="currentColor"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11z M3.5 6l8.5 6.5L20.5 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></g></symbol>
+    <symbol id="i-api" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/><path d="M12.5 16l2-2.5 2 1.5 2-3" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="7" height="5" rx="1.2"/><rect x="14" y="15.5" width="7" height="5" rx="1.2"/><path d="M6.5 8.5v4a2 2 0 0 0 2 2h7.5M13.5 12l2.5 2.5-2.5 2.5"/></g></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4M15 3v4M7 7h10v4a5 5 0 0 1-10 0z"/><path d="M12 16v5"/></g></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></g></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10.5a4 4 0 0 0 .4-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/><path d="M12 15.5v-4M10 13.3l2-2 2 2"/></g></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.5c3-1.3 5.5-1 5.5-1s.3 2.5-1 5.5L13 14.5l-3.5-3.5z"/><path d="M9.5 11L6 10.5l3-3h4M13 14.5l.5 3.5 3-3v-4M7.5 16.5c-1.5.5-2.5 2.5-2.5 2.5s2-1 2.5-2.5z"/></g></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5.2 5.2l-2.4-2.4V6.5h-2.6zM14.7 6.3a4.5 4.5 0 0 1 5.2-3.1l-2.4 2.4M13.5 10.5l-9 9a1.4 1.4 0 0 0 2 2l9-9"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.6"/><circle cx="12" cy="16.8" r=".4" fill="currentColor"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Living background: WebGL field (field.js). The CSS gradient fallback shows when WebGL is unavailable or JS is off. -->
+<div class="bg" aria-hidden="true">
+  <div class="bg-fallback"><i></i><i></i><i></i></div>
+  <canvas class="bg-canvas" id="field"></canvas>
+  <div class="bg-scrim"></div>
+  <div class="bg-grain"></div>
+</div>
+<div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+<header class="site-header" id="top">
+  <div class="header-pill">
+    <a class="brand" href="#top" aria-label="Jinay Shah, back to top">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="brand-name">Jinay Shah</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#build">Build</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-mobile-extra">
+        <a class="btn btn-primary btn-block" href="#contact">Tell me the problem <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div class="social-row">
+          <a class="icon-btn icon-btn--line" href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" aria-label="Email workwithjinayshah@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="kbd-btn js-only" type="button" data-palette-open aria-label="Open command palette" aria-keyshortcuts="Control+K Meta+K">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="kbd-keys" aria-hidden="true"><kbd data-kbd-mod>Ctrl</kbd><kbd>K</kbd></span>
+      </button>
+      <a class="icon-btn hide-sm" href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+      <a class="icon-btn hide-sm" href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+      <a class="icon-btn hide-sm" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" aria-label="Email workwithjinayshah@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+      <button class="icon-btn theme-toggle js-only" type="button" aria-label="Switch colour theme">
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm hide-md" href="#contact" data-magnetic>Start a project</a>
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-tag mono" data-intro><span class="pulse" aria-hidden="true"></span> Jinay Shah <span class="sep" aria-hidden="true">/</span> software engineer, end to end</p>
+        <h1 id="hero-title" class="hero-title" data-split="chars">
+          <span class="line">Problem in.</span>
+          <span class="line"><span class="prism-text">Software</span> out.</span>
+        </h1>
+      </div>
+      <div class="hero-body">
+        <p class="hero-sub" data-intro>I turn ideas and problems into working software, end to end and fast, with AI in the loop and an engineer's judgement on every line. My deepest proof is in backend and AI systems. My scope is whatever your problem needs.</p>
+        <p class="hero-bring" data-intro>
+          <span class="mono bring-label">Bring me</span>
+          <span class="bring-word" data-rotate='["a web app or dashboard","an API that has to scale","an AI feature that must be right","a manual process to automate","an ERP or payments integration","a data pipeline","a codebase that needs rescuing","an idea on a napkin"]'>a web app or dashboard</span>
+        </p>
+        <div class="hero-ctas" data-intro>
+          <a class="btn btn-primary btn-lg" href="#contact" data-magnetic>Tell me the problem <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost btn-lg" href="#work" data-magnetic>See the proof</a>
+        </div>
+        <div class="hero-links" data-intro>
+          <a class="icon-btn icon-btn--line" href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" aria-label="Email workwithjinayshah@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+          <button class="email-chip js-only" type="button" data-copy-email aria-label="Copy email address workwithjinayshah@gmail.com">
+            <span class="mono">workwithjinayshah@gmail.com</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Illustrative "problem to shipped" build card; decorative, the hero copy carries the meaning -->
+      <div class="hero-visual" aria-hidden="true" data-intro>
+        <div class="ship-card" data-tilt>
+          <div class="ship-bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="mono ship-title">build.log</span>
+            <span class="mono ship-tag">illustrative</span>
+          </div>
+          <ol class="ship-stages">
+            <li data-stage="0"><b></b><span>Problem</span></li>
+            <li data-stage="1"><b></b><span>Scope</span></li>
+            <li data-stage="2"><b></b><span>Build</span></li>
+            <li data-stage="3"><b></b><span>Verify</span></li>
+            <li data-stage="4"><b></b><span>Ship</span></li>
+          </ol>
+          <ul class="ship-log mono">
+            <li data-stage="0"><span class="k">brief</span> "orders live in a spreadsheet; I want a dashboard"</li>
+            <li data-stage="1"><span class="k">scope</span> first slice: import, API, 3 charts, login</li>
+            <li data-stage="2"><span class="k">build</span> api + ui drafted with AI, reviewed line by line</li>
+            <li data-stage="3"><span class="k">verify</span> tests pass · edge cases logged · demo link</li>
+            <li data-stage="4" class="ok"><span class="k">ship</span> deployed in containers · handover notes ✓</li>
+          </ul>
+          <div class="ship-meter"><i></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="glance" aria-label="At a glance">
+        <li><span class="glance-k"><span data-count="2">2</span> yrs</span><span class="glance-v">building multi-tenant platforms for regulated software</span></li>
+        <li><span class="glance-k"><span data-count="8">8</span></span><span class="glance-v">case studies, from analytics engines and RAG to a full-stack SaaS</span></li>
+        <li><span class="glance-k"><span data-count="10">10</span></span><span class="glance-v">kinds of software work on the menu below</span></li>
+        <li><span class="glance-k">Gold</span><span class="glance-v">Medalist, B.Tech in Computer Science and Engineering</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MARQUEE (decorative; the same tools are listed in the Stack section) -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-row"><div class="marquee-track">
+      <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Hasura</span><span>Redis</span><span>RabbitMQ</span><span>Celery</span><span>Docker</span><span>AWS</span><span>LLMs</span><span>RAG</span><span>MCP</span><span>OCR</span><span>Power Automate</span>
+      <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Hasura</span><span>Redis</span><span>RabbitMQ</span><span>Celery</span><span>Docker</span><span>AWS</span><span>LLMs</span><span>RAG</span><span>MCP</span><span>OCR</span><span>Power Automate</span>
+    </div></div>
+    <div class="marquee-row marquee-row--rev"><div class="marquee-track">
+      <span>Web apps</span><span>APIs</span><span>AI features</span><span>Automation</span><span>Integrations</span><span>Data pipelines</span><span>Dashboards</span><span>DevOps</span><span>MVPs</span><span>Rescues</span><span>Reports</span><span>Payments</span>
+      <span>Web apps</span><span>APIs</span><span>AI features</span><span>Automation</span><span>Integrations</span><span>Data pipelines</span><span>Dashboards</span><span>DevOps</span><span>MVPs</span><span>Rescues</span><span>Reports</span><span>Payments</span>
+    </div></div>
+  </div>
+
+  <!-- BUILD / CAPABILITIES -->
+  <section class="section" id="build" aria-labelledby="build-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow mono" data-scramble><span>01</span> What I can build for you</p>
+        <h2 id="build-title" class="display" data-split="words">If it runs on software, bring it.</h2>
+        <p class="lead reveal">My strongest proof is in backends and AI. With AI-assisted engineering, plus tests, review and honest scoping, I take on far more than that. Each card says plainly what backs it up.</p>
+      </header>
+      <ul class="bento" role="list">
+        <li class="tile tile--wide reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span><span class="proof proof--core">Core</span></div>
+          <h3>AI and LLM features</h3>
+          <p>Assistants, document extraction, RAG, text-to-SQL and agents that return structured, checkable output instead of confident guesses.</p>
+          <p class="evidence mono"><span>Backed by</span> case studies 02, 03, 05, 06 and 08: OCR-to-LLM pipelines, schema generation, RAG, self-correcting SQL, an MCP server</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-api"/></svg></span><span class="proof proof--core">Core</span></div>
+          <h3>APIs and backends</h3>
+          <p>Clean, documented, tenant-safe services your apps and partners can rely on.</p>
+          <p class="evidence mono"><span>Backed by</span> Python/FastAPI, Node/Express, PostgreSQL/Hasura, auth and audit work, and the backend of a live analytics SaaS (case 08)</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg></span><span class="proof proof--built">Built before</span></div>
+          <h3>Web apps and dashboards</h3>
+          <p>Full-stack products: screens, data, charts and the API behind them.</p>
+          <p class="evidence mono"><span>Backed by</span> a live full-stack analytics SaaS (case 08), a MERN e-commerce app with a payment gateway, Next.js API integration</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-flow"/></svg></span><span class="proof proof--built">Built before</span></div>
+          <h3>Automation and RPA</h3>
+          <p>Take the copy-paste, the re-keying and the daily manual report off someone's plate.</p>
+          <p class="evidence mono"><span>Backed by</span> Power Automate, Power Apps and AI Builder OCR flows, RPA training, queue workers</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg></span><span class="proof proof--built">Built before</span></div>
+          <h3>Integrations</h3>
+          <p>ERP, payments, email and messaging, wired together so data moves without hands.</p>
+          <p class="evidence mono"><span>Backed by</span> Excel and ERP integrations, a payment gateway, RabbitMQ messaging, email workers</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-db"/></svg></span><span class="proof proof--core">Core</span></div>
+          <h3>Data pipelines and analytics</h3>
+          <p>Numbers you can defend: ingestion, statistics, charts and generated reports.</p>
+          <p class="evidence mono"><span>Backed by</span> a statistics engine (case 01), NumPy, SciPy and pandas, Word, PDF and Excel reports</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg></span><span class="proof proof--built">Built before</span></div>
+          <h3>Deployment and DevOps</h3>
+          <p>Containers, pipelines and dashboards, so shipping is boring and failures are visible.</p>
+          <p class="evidence mono"><span>Backed by</span> Docker and Compose, CI pipelines, Prometheus, Loki and Grafana</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="proof proof--ai">AI-assisted</span></div>
+          <h3>MVPs and prototypes</h3>
+          <p>A thin, real, working slice you can click and show, then grow without a rewrite.</p>
+          <p class="evidence mono"><span>How</span> a small first slice, AI-drafted, engineer-reviewed, deployed early</p>
+        </li>
+        <li class="tile reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span><span class="proof proof--ai">AI-assisted</span></div>
+          <h3>Fixing existing codebases</h3>
+          <p>Stuck, flaky or half-finished? I read it first, pin behaviour with tests, then fix the riskiest part.</p>
+          <p class="evidence mono"><span>How</span> retry, idempotency and migration discipline from production work</p>
+        </li>
+        <li class="tile tile--cta reveal" data-tilt data-spot>
+          <div class="tile-top"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-question"/></svg></span><span class="proof proof--open">Open</span></div>
+          <h3>Something else?</h3>
+          <p>Tell me the problem, not the technology. If I am not the right person, I will say so up front.</p>
+          <a class="btn btn-primary btn-sm" href="#contact" data-magnetic>Describe it <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="section-head section-head--row">
+        <div>
+          <p class="eyebrow mono" data-scramble><span>02</span> Proof of work</p>
+          <h2 id="work-title" class="display" data-split="words">Eight real systems, problem to architecture.</h2>
+        </div>
+        <p class="lead reveal">Described generically on purpose: no client names, data or prompts. Open any case for the problem, an animated architecture diagram and the decisions behind it.</p>
+      </header>
+    </div>
+    <div class="rail" data-rail>
+      <div class="rail-sticky">
+        <ul class="rail-track" role="list">
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">01</span><span class="badge">Owned end to end</span></div>
+              <p class="cc-kicker mono">Statistical Process Control Analytics Engine</p>
+              <h3><a class="stretched" href="#case-spc-analytics-engine" data-case-link="spc-analytics-engine">A statistical process control engine with auditable formulas</a></h3>
+              <p class="cc-sum">A FastAPI service that computes capability indices, control-chart rule violations and out-of-spec findings, with a step-by-step audit trail for every number.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>Python</li><li>FastAPI</li><li>NumPy</li><li>SciPy</li><li>PostgreSQL</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">02</span><span class="badge">Owned and built</span></div>
+              <p class="cc-kicker mono">AI Schema Builder from Word Documents</p>
+              <h3><a class="stretched" href="#case-ai-schema-builder" data-case-link="ai-schema-builder">Turning Word templates into validated form schemas with an LLM</a></h3>
+              <p class="cc-sum">A pipeline that reads a Word document's structure, fans out LLM calls per section, validates and repairs the results, and hands a proposal to a human reviewer.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>LLM</li><li>Celery</li><li>JSON Schema</li><li>Document AI</li><li>FastAPI</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">03</span><span class="badge">Owned the module</span></div>
+              <p class="cc-kicker mono">OCR-to-LLM Extraction with Human Review</p>
+              <h3><a class="stretched" href="#case-ocr-llm-extraction" data-case-link="ocr-llm-extraction">Extracting structured records from scanned documents, with review</a></h3>
+              <p class="cc-sum">A page-parallel OCR and LLM pipeline with a mapping cascade that reduces model calls and learns from reviewer corrections.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>OCR</li><li>LLM</li><li>Celery</li><li>RabbitMQ</li><li>SSE</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">04</span><span class="badge">Owned the module</span></div>
+              <p class="cc-kicker mono">Async Report Generation and Signed Delivery</p>
+              <h3><a class="stretched" href="#case-async-report-pipeline" data-case-link="async-report-pipeline">Generating large reports in the background and delivering them safely</a></h3>
+              <p class="cc-sum">A queue-driven pipeline that builds Word, PDF and Excel outputs and emails recipients expiring, signed download links.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>RabbitMQ</li><li>FastAPI</li><li>DOCX</li><li>Security</li><li>Async</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">05</span><span class="badge">Significant contributor</span></div>
+              <p class="cc-kicker mono">RAG and Self-Correcting Text-to-SQL Assistant</p>
+              <h3><a class="stretched" href="#case-rag-text-to-sql-assistant" data-case-link="rag-text-to-sql-assistant">A regulatory-compliance chat assistant that answers from documents and a database</a></h3>
+              <p class="cc-sum">A streaming chat service that routes each question to retrieval or SQL, validates generated queries, and cites its sources.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>RAG</li><li>Text-to-SQL</li><li>FastAPI</li><li>Streaming</li><li>LLM</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">06</span><span class="badge">Contributor</span></div>
+              <p class="cc-kicker mono">AI Document Analysis with Lock-and-Cache De-duplication</p>
+              <h3><a class="stretched" href="#case-ai-document-analysis" data-case-link="ai-document-analysis">Asynchronous document analysis that does not pay for the same LLM call twice</a></h3>
+              <p class="cc-sum">A pipeline that summarises uploaded documents and generates recommendations, using Redis locks and caches to avoid duplicate model calls.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>LLM</li><li>OCR</li><li>Redis</li><li>RabbitMQ</li><li>Node.js</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">07</span><span class="badge">Team contributor</span></div>
+              <p class="cc-kicker mono">Multi-Tenant Platform Foundation</p>
+              <h3><a class="stretched" href="#case-multi-tenant-foundation" data-case-link="multi-tenant-foundation">Gateway authentication, audit trails and credit metering for a multi-tenant platform</a></h3>
+              <p class="cc-sum">The shared foundation under several services: cookie auth at the gateway, an audited database, and an atomic ledger that meters LLM usage per company.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>Security</li><li>PostgreSQL</li><li>Hasura</li><li>FastAPI</li><li>Observability</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card reveal" data-tilt data-spot>
+            <article>
+              <div class="cc-top"><span class="cc-n">08</span><span class="badge">Led full stack</span></div>
+              <p class="cc-kicker mono">Full-Stack Marketing Analytics SaaS</p>
+              <h3><a class="stretched" href="#case-marketing-analytics-saas" data-case-link="marketing-analytics-saas">A full-stack analytics SaaS that turns marketing data into reports and answers</a></h3>
+              <p class="cc-sum">A multi-tenant platform that turns web-analytics and search data into cached dashboards, AI insights, scheduled reports and a grounded team chat, with an MCP server for external AI assistants.</p>
+              <div class="cc-flow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <ul class="chips" role="list" aria-label="Tags"><li>Full-stack</li><li>FastAPI</li><li>PostgreSQL</li><li>RAG</li><li>MCP</li></ul>
+              <span class="cc-more" aria-hidden="true">Open case study <svg class="icon"><use href="#i-arrow"/></svg></span>
+            </article>
+          </li>
+          <li class="case-card case-card--cta reveal">
+            <div class="cta-card">
+              <p class="cc-kicker mono">09 · Your project</p>
+              <h3>The next case study could be yours.</h3>
+              <p class="cc-sum">Web app, API, automation, AI feature or a rescue job. Send a short description and I will reply with questions and a suggested first step.</p>
+              <a class="btn btn-primary" href="#contact" data-magnetic>Start a conversation <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+        </ul>
+        <div class="rail-hud" aria-hidden="true">
+          <span class="mono rail-count"><b data-rail-n>01</b> / 09</span>
+          <span class="rail-bar"><i data-rail-bar></i></span>
+          <span class="mono rail-hint">keep scrolling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack" aria-labelledby="stack-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow mono" data-scramble><span>03</span> Stack</p>
+        <h2 id="stack-title" class="display" data-split="words">The toolbox, grouped by job.</h2>
+        <p class="lead reveal">Tools I have used in real work. New ones get picked up when a project calls for them.</p>
+      </header>
+      <div class="stack-grid">
+        <section class="stack reveal" data-spot aria-labelledby="sk-0">
+          <p class="stack-n" aria-hidden="true">12</p>
+          <h3 id="sk-0">Backend</h3>
+          <ul class="chips" role="list"><li>Python</li><li>FastAPI</li><li>Pydantic v2</li><li>asyncio</li><li>httpx</li><li>asyncpg</li><li>Node.js</li><li>Express</li><li>SSE and NDJSON streaming</li><li>WebSockets</li><li>APScheduler</li><li>OpenAPI</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-1">
+          <p class="stack-n" aria-hidden="true">13</p>
+          <h3 id="sk-1">AI / LLM</h3>
+          <ul class="chips" role="list"><li>Azure OpenAI (chat and embeddings)</li><li>OpenAI</li><li>MCP (Model Context Protocol) servers</li><li>JSON mode</li><li>schema validation and repair</li><li>feedback retries</li><li>RAG</li><li>hybrid and semantic search</li><li>Qdrant</li><li>text-to-SQL (Vanna, EXPLAIN validation)</li><li>planner-executor agents</li><li>prompt-injection-aware design</li><li>token and cost accounting</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-2">
+          <p class="stack-n" aria-hidden="true">05</p>
+          <h3 id="sk-2">Web and apps</h3>
+          <ul class="chips" role="list"><li>React (MERN)</li><li>Next.js API integration</li><li>Express</li><li>payment gateway integration</li><li>charts and dashboards</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-3">
+          <p class="stack-n" aria-hidden="true">06</p>
+          <h3 id="sk-3">Automation and integrations</h3>
+          <ul class="chips" role="list"><li>Power Automate</li><li>Power Apps</li><li>AI Builder OCR</li><li>RPA</li><li>Excel and ERP integrations</li><li>Google Analytics, Search Console and Sheets APIs</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-4">
+          <p class="stack-n" aria-hidden="true">14</p>
+          <h3 id="sk-4">Data and reports</h3>
+          <ul class="chips" role="list"><li>PostgreSQL</li><li>SQLAlchemy 2 (async)</li><li>Alembic</li><li>Hasura GraphQL</li><li>SQL functions and triggers</li><li>audit trails</li><li>idempotent migrations</li><li>NumPy</li><li>SciPy</li><li>pandas</li><li>Plotly</li><li>openpyxl</li><li>python-docx and PDF</li><li>OCR (Azure Document Intelligence, PaddleOCR)</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-5">
+          <p class="stack-n" aria-hidden="true">07</p>
+          <h3 id="sk-5">Async and messaging</h3>
+          <ul class="chips" role="list"><li>RabbitMQ</li><li>Celery (chords, acks-late)</li><li>aio-pika</li><li>Redis locks and caches</li><li>dead-letter queues</li><li>retries with backoff</li><li>idempotent consumers</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-6">
+          <p class="stack-n" aria-hidden="true">10</p>
+          <h3 id="sk-6">DevOps</h3>
+          <ul class="chips" role="list"><li>Docker</li><li>Docker Compose</li><li>CI pipelines</li><li>GitHub Actions</li><li>EC2, RDS and ECR</li><li>Prometheus</li><li>Loki</li><li>Grafana</li><li>MinIO and S3</li><li>pytest</li></ul>
+        </section>
+        <section class="stack reveal" data-spot aria-labelledby="sk-7">
+          <p class="stack-n" aria-hidden="true">09</p>
+          <h3 id="sk-7">Security</h3>
+          <ul class="chips" role="list"><li>JWT cookie auth</li><li>refresh rotation</li><li>Redis revocation</li><li>OAuth2 (Google)</li><li>hashed API keys</li><li>RSA and HMAC</li><li>presigned URLs</li><li>tenant isolation</li><li>IDOR guards</li></ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <div class="wrap split">
+      <div class="split-side">
+        <header class="section-head">
+          <p class="eyebrow mono" data-scramble><span>04</span> Experience</p>
+          <h2 id="experience-title" class="display" data-split="words">Where the experience comes from.</h2>
+        </header>
+        <div class="edu-card reveal" data-spot>
+          <p class="eyebrow mono">Education</p>
+          <p class="edu-line"><strong>B.Tech, Computer Science and Engineering</strong> (IBM specialization in Big-Data and Analytics), ICT - Ganpat University, 2020-2024.</p>
+          <p class="edu-medal"><span class="medal" aria-hidden="true"></span> Gold Medalist</p>
+        </div>
+      </div>
+      <ol class="timeline" role="list" data-timeline>
+        <li class="t-item t-item--now reveal">
+          <p class="mono t-when">Nov 2024 to present</p>
+          <h3>Software Engineer</h3>
+          <p class="t-org">AI4Pharma (backed by Silver Touch Technology Limited) · Ahmedabad, India</p>
+          <ul class="ticks"><li>Own the statistical analytics engine, the AI schema builder, and the new report generation and data capture modules of a multi-tenant quality-analytics platform.</li><li>Worked on a regulatory-compliance AI assistant, contributing to RAG, text-to-SQL, document analysis, RabbitMQ workers and Express APIs.</li><li>Work across services on authentication, auditing, LLM credit metering, CI/CD and monitoring.</li></ul>
+        </li>
+        <li class="t-item reveal">
+          <p class="mono t-when">Jul 2024 to Nov 2024</p>
+          <h3>Software Engineer</h3>
+          <p class="t-org">Silver Touch Technology Limited · Ahmedabad, India</p>
+          <ul class="ticks"><li>Built a FastAPI backend for an AI document-processing platform that turns PDFs into structured JSON in PostgreSQL using OCR and an LLM.</li><li>Built an asynchronous pipeline on RabbitMQ with two Dockerised workers and a dead-letter queue whose failed jobs are exposed through APIs for retries.</li><li>Built the backend for a human-in-the-loop approval workflow, and secured sessions with a Redis denylist of revoked cookies.</li></ul>
+        </li>
+        <li class="t-item reveal">
+          <p class="mono t-when">Jan 2024 to Jun 2024</p>
+          <h3>Software Intern</h3>
+          <p class="t-org">Silver Touch Technology Limited · Ahmedabad, India</p>
+          <ul class="ticks"><li>Built a MERN-stack e-commerce application with a payment gateway integration.</li><li>Completed RPA training.</li></ul>
+        </li>
+        <li class="t-item reveal">
+          <p class="mono t-when">May 2022 to Jun 2022</p>
+          <h3>Cloud Data Engineer Intern</h3>
+          <p class="t-org">Squadron Technology · Ahmedabad, India</p>
+          <ul class="ticks"><li>Set up an open-source data catalog.</li><li>Published datasets to the catalog.</li></ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="wrap split split--sticky">
+      <div class="split-side">
+        <header class="section-head sticky-head">
+          <p class="eyebrow mono" data-scramble><span>05</span> How I work</p>
+          <h2 id="process-title" class="display" data-split="words">Fast with AI. Honest with you.</h2>
+          <p class="lead reveal">AI drafts quickly. I own the decisions: the architecture, every reviewed diff, the tests and what ships.</p>
+        </header>
+      </div>
+      <div>
+        <ol class="steps" role="list">
+          <li class="step reveal" data-spot><span class="step-n">01</span><div><h3>Understand the problem</h3><p>We start with the users, the data and the constraints, not the tech. I ask what a wrong answer or a slow screen costs, because that decides how much validation, review and polish the work needs.</p></div></li>
+          <li class="step reveal" data-spot><span class="step-n">02</span><div><h3>Scope it honestly</h3><p>You get a small first slice, the risks written down, and a plain statement of what I have done before versus what I will be doing with AI assistance. No surprises later.</p></div></li>
+          <li class="step reveal" data-spot><span class="step-n">03</span><div><h3>Build with AI in the loop</h3><p>I use AI to draft code, tests and boilerplate quickly, then review every line, run it and keep only what I understand and can defend. Speed comes from the tools; correctness comes from the process.</p></div></li>
+          <li class="step reveal" data-spot><span class="step-n">04</span><div><h3>Verify before you see it</h3><p>Tests, logging and error handling are part of the work. Failure modes such as timeouts, bad input, duplicate messages and quota limits are decided up front, not discovered in production.</p></div></li>
+          <li class="step reveal" data-spot><span class="step-n">05</span><div><h3>Ship and hand over</h3><p>Deployed in containers with readable code, API and setup docs, and a walkthrough, so your team can own it without depending on me.</p></div></li>
+        </ol>
+        <aside class="outside reveal" aria-labelledby="outside-title">
+          <p class="eyebrow mono">Outside my core stack</p>
+          <h3 id="outside-title">How I work on the unfamiliar parts</h3>
+          <ul class="ticks">
+            <li>I say so up front when part of a project is outside my proven history, and how I plan to cover it.</li>
+            <li>I lean on official docs and AI assistants to get productive fast, and prove each piece works with tests and a running demo before building on it.</li>
+            <li>Risky unknowns go first, in a short spike, so we learn early and cheaply whether the approach holds.</li>
+            <li>If something needs a specialist, I will tell you rather than learn on your budget.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-side reveal">
+        <div class="about-card" data-tilt data-spot>
+          <svg class="mark mark--xl" aria-hidden="true"><use href="#i-mark"/></svg>
+          <p class="about-name">Jinay Shah</p>
+          <p class="about-role">Software engineer: backend, AI and whatever the problem needs</p>
+          <p class="about-loc"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Ahmedabad, India</p>
+          <div class="social-row">
+            <a class="icon-btn icon-btn--line" href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a class="icon-btn icon-btn--line" href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+            <a class="icon-btn icon-btn--line" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" aria-label="Email workwithjinayshah@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="about-main">
+        <header class="section-head">
+          <p class="eyebrow mono" data-scramble><span>06</span> About</p>
+          <h2 id="about-title" class="display" data-split="words">Correct data, traceable actions, checkable answers.</h2>
+        </header>
+        <div class="prose reveal">
+          <p>I am a software engineer based in Ahmedabad, India. For the past two years I have worked on multi-tenant platforms for regulated life-sciences software, where data has to be correct, every action has to be traceable, and an LLM answer is only useful if it can be checked. That environment shaped how I build: validate what goes in, validate what comes out, and decide in advance what happens when something fails.</p>
+          <p>My deepest work sits where backend engineering meets AI: statistical analytics engines, document pipelines that combine OCR and LLMs with human review, retrieval and text-to-SQL assistants, and queue-driven systems that deliver results reliably. Around that I have built a MERN e-commerce app with a payment gateway, trained in RPA, and worked with Next.js, Power Automate automation, and Excel and ERP integrations.</p>
+          <p>Today, AI-assisted engineering lets one careful engineer cover far more ground. I use it to move fast across the whole stack, and I keep the habits that make software trustworthy: tests, review, observability and honest scoping.</p>
+        </div>
+        <h3 class="sub-title reveal">What I'm like to work with</h3>
+        <ol class="principles" role="list">
+          <li class="principle reveal"><span class="principle-n mono">01</span><div><h4>I validate at the edges.</h4><p>Inputs are checked on the way in, and LLM output is checked against a schema on the way out, with a retry that feeds the error back to the model before anything is accepted.</p></div></li>
+          <li class="principle reveal"><span class="principle-n mono">02</span><div><h4>I plan for failure.</h4><p>Every external call has a timeout, and every AI step has a fallback path, so a provider hiccup degrades the feature instead of breaking it.</p></div></li>
+          <li class="principle reveal"><span class="principle-n mono">03</span><div><h4>I make jobs safe to repeat.</h4><p>Queue consumers are idempotent, claims are atomic, and retries are bounded with dead-letter queues, so a redelivered message does not create duplicate work or duplicate cost.</p></div></li>
+          <li class="principle reveal"><span class="principle-n mono">04</span><div><h4>I make systems observable and auditable.</h4><p>Structured logs, metrics, audit trails, usage ledgers and typed error codes mean you can see what the system did and why.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap split">
+      <div class="split-side">
+        <header class="section-head">
+          <p class="eyebrow mono" data-scramble><span>07</span> FAQ</p>
+          <h2 id="faq-title" class="display" data-split="words">Questions clients usually ask.</h2>
+          <p class="lead reveal">Unsure whether something fits? Ask. The worst answer is an honest "not me, and here is what I would look for instead".</p>
+        </header>
+        <a class="btn btn-ghost reveal" href="#contact" data-magnetic>Ask a question <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="faq">
+        <details class="qa reveal">
+          <summary><span>What kinds of projects do you take on?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Most kinds of software work: web apps and dashboards, APIs and backends, AI and LLM features, automation, integrations with ERPs, payments and messaging, data pipelines and analytics, deployment, MVPs, and fixing existing codebases. My deepest proof is in backend and AI systems, and the case studies show it. For everything else, we work out the fit in the first conversation.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>Can you work outside Python and AI?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Yes. I have also built with Node.js and Express, a MERN e-commerce app with a payment gateway, Next.js API integration, and Power Automate automation. Where a project goes beyond what I have shipped before, I say so plainly, cover it with AI-assisted engineering, official docs, tests and review, and tackle the riskiest unknown first so we find out early. If it really needs a specialist, I will tell you.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>How do you use AI, and can I trust the code?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>AI drafts code, tests and boilerplate so the work moves fast. I review every change, run it, and keep only what I understand and can explain. Tests, logging and clear structure are part of the deliverable, so you can verify the result yourself rather than take my word for it.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>How do you handle NDAs and confidentiality?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>I am comfortable working under an NDA and I keep client details, data and prompts private. This site describes my past work generically for the same reason. Terms are agreed before any sensitive material is shared.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>How do we communicate during a project?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>We agree the channel, cadence and working hours in the first call. Whatever the format, you will get regular, concrete updates tied to working increments, not vague status reports.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>How do you manage LLM cost and quality?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>Cost is controlled by shrinking inputs, splitting work into small calls, caching and de-duplicating repeats, skipping the model when the input is empty or a simple rule will do, and logging tokens per call. Quality is controlled by validating every output against a schema, retrying with feedback, falling back deterministically, and keeping a human review step where mistakes are expensive.</p></div>
+        </details>
+        <details class="qa reveal">
+          <summary><span>How does handover work?</span><span class="qa-icon" aria-hidden="true"></span></summary>
+          <div class="qa-body"><p>At the end you receive the code, documentation for the APIs and setup, and a walkthrough of the design and its trade-offs. The specifics, including any support afterwards, are agreed at the start of the engagement.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-panel reveal">
+        <div class="contact-intro">
+          <p class="eyebrow mono" data-scramble><span>08</span> Contact</p>
+          <h2 id="contact-title" class="display contact-title">Tell me the problem. <span class="prism-text">Let's ship the fix.</span></h2>
+          <p class="lead">An idea, a broken process, a half-built product or a clear spec: send a short description and I will reply with questions and a suggested first step.</p>
+          <a class="contact-email" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            <span>workwithjinayshah<wbr>@gmail.com</span>
+          </a>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" data-magnetic>Email me <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <button class="btn btn-ghost js-only" type="button" data-copy-email><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg> Copy email</button>
+          </div>
+          <ul class="contact-links" role="list">
+            <li><a href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn <svg class="icon icon--xs" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in new tab)</span></a></li>
+            <li><a href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub <svg class="icon icon--xs" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in new tab)</span></a></li>
+          </ul>
+          <p class="contact-alt">Also reachable at <a href="mailto:jinshah0322@gmail.com?subject=Project%20enquiry">jinshah0322@gmail.com</a></p>
+        </div>
+
+        <form class="brief" id="brief" novalidate aria-labelledby="brief-title">
+          <h3 id="brief-title" class="brief-title">Draft me an email</h3>
+          <p class="brief-note">This only builds an email draft in your own mail app. Nothing is sent or stored by this page.</p>
+          <div class="field">
+            <label for="b-name">Your name <span class="opt">(optional)</span></label>
+            <input id="b-name" name="name" type="text" autocomplete="name" maxlength="120">
+          </div>
+          <div class="field">
+            <label for="b-type">What do you need?</label>
+            <select id="b-type" name="type">
+              <option>A web app or dashboard</option>
+              <option>An API or backend</option>
+              <option>An AI or LLM feature</option>
+              <option>Automation or RPA</option>
+              <option>An integration (ERP, payments, messaging)</option>
+              <option>A data pipeline or analytics</option>
+              <option>Deployment or DevOps</option>
+              <option>An MVP or prototype</option>
+              <option>Fixing or rescuing an existing codebase</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-desc">The problem, in a few sentences</label>
+            <textarea id="b-desc" name="desc" rows="4" maxlength="1500" placeholder="What is going wrong or what should exist, and who is it for?" aria-describedby="b-desc-err"></textarea>
+            <p class="field-err" id="b-desc-err" hidden>Add a sentence or two so I can reply with useful questions.</p>
+          </div>
+          <div class="field">
+            <label for="b-time">Timeline <span class="opt">(optional)</span></label>
+            <input id="b-time" name="timeline" type="text" maxlength="120" placeholder="e.g. a first slice within a month">
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Open email draft <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <noscript><p class="brief-note">JavaScript is off, so this helper cannot build a draft. Email <a href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry">workwithjinayshah@gmail.com</a> directly.</p></noscript>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE FILES: full case studies. Visible as a normal section without JavaScript;
+       with JavaScript they open in the case-study dialog (cases.js), and diagrams are drawn from each "How it works" list. -->
+  <section class="case-store" id="case-files" aria-labelledby="case-files-title">
+    <div class="wrap">
+      <h2 id="case-files-title" class="display">Case studies in full</h2>
+  <article class="case" id="case-spc-analytics-engine" data-slug="spc-analytics-engine" data-index="01">
+    <header class="case-head">
+      <p class="mono case-kicker">01 · Statistical Process Control Analytics Engine</p>
+      <h2 class="case-title">A statistical process control engine with auditable formulas</h2>
+      <p class="case-summary">A FastAPI service that computes capability indices, control-chart rule violations and out-of-spec findings, with a step-by-step audit trail for every number.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>Python</li><li>FastAPI</li><li>NumPy</li><li>SciPy</li><li>PostgreSQL</li><li>Analytics</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>A quality-analytics platform for regulated manufacturing needed statistics that users could trust and auditors could inspect. Formulas varied by site and had to be editable without a redeploy. Specification limits varied by market and by customer. Results needed to be explainable, not just correct.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>A formula engine where formulas are stored in the database and evaluated in a restricted namespace, with recursive dependencies between formulas</li><li>An AST-based decomposition that records inputs, the substituted expression, intermediate values and the dependency tree for each calculation</li><li>Capability indices (Cp, Cpk, Cpu, Cpl, Pp, Ppk) with one-sided fallbacks and validation that rejects a calculation with no specification limit</li><li>A vectorised control-chart rule engine driven by JSONB conditions, so built-in rules and company-defined rules share one code path</li><li>Out-of-spec and out-of-trend analytics with overall, market and customer scope, resolved by a pure function that applies overrides over global limits</li><li>Stability shelf-life prediction using linear regression and a confidence bound</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>Client request enters through the API gateway</li><li>SPC service loads parameter configuration and batch data</li><li>Spec resolver picks limits by scope (overall, market or customer)</li><li>Formula engine evaluates the dependency chain in a restricted namespace</li><li>Rule engine checks control-chart patterns using stored JSONB conditions</li><li>Result row is persisted and the audit trail is returned with the numbers</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Formulas live in the database, not in code,</strong> because sites differ and changes must not need a release.</li><li><strong>The spec resolver is a pure function,</strong> because scope and override logic is easy to get subtly wrong and a pure function is easy to test exhaustively.</li><li><strong>Near-zero values are snapped and NaN or Inf values are sanitised before serialisation,</strong> because a single bad number should not break a whole response.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Owned this service end to end: design, implementation and tests.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>NumPy</li><li>SciPy</li><li>PostgreSQL</li><li>Hasura</li><li>pytest</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>The platform gets calculations that carry their own explanation, can be adapted per site without code changes, and behave predictably on messy real-world data.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-ai-schema-builder" data-slug="ai-schema-builder" data-index="02">
+    <header class="case-head">
+      <p class="mono case-kicker">02 · AI Schema Builder from Word Documents</p>
+      <h2 class="case-title">Turning Word templates into validated form schemas with an LLM</h2>
+      <p class="case-summary">A pipeline that reads a Word document's structure, fans out LLM calls per section, validates and repairs the results, and hands a proposal to a human reviewer.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>LLM</li><li>Celery</li><li>JSON Schema</li><li>Document AI</li><li>FastAPI</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Customers had paper-style templates in Word and needed them as structured digital forms. Doing this by hand was slow, and a single large LLM call over a whole document was unreliable and hard to validate.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>Extraction of the heading tree directly from Word styles and numbering, with no OCR needed</li><li>Chunking of each section so every LLM call stays small</li><li>A Celery chord that runs one LLM task per section in parallel, then a finalize step that merges the fragments</li><li>Output restricted to a fixed seven-block vocabulary and validated against JSON Schema Draft-7</li><li>One feedback retry, deterministic repair, and a plain-text fallback when output cannot be fixed</li><li>Credit gating before each call, a reviewer proposal step, and a PDF preview</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>User uploads a .docx directly to object storage</li><li>Orchestrator task extracts the heading tree and chunks sections</li><li>Celery chord fans out one LLM task per section</li><li>Each task gates credits, calls the model and validates against Draft-7</li><li>On failure: feedback retry, then deterministic repair, then plain-text fallback</li><li>Finalize task merges fragments into one schema</li><li>A proposal is stored for human review and approval</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>A fixed block vocabulary is used</strong> because it makes output validatable and keeps the model from inventing structure.</li><li><strong>Work is split per section,</strong> because small calls fail independently, run in parallel and cost less to retry.</li><li><strong>A plain-text fallback exists</strong> so a section the model cannot handle still produces something a reviewer can fix.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Owned and built this module end to end: design, implementation and tests.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>Celery</li><li>RabbitMQ</li><li>Azure OpenAI</li><li>jsonschema</li><li>python-docx</li><li>MinIO</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Reviewers start from a mostly complete, schema-valid draft instead of a blank form, and every generated schema passes validation before a human sees it.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-ocr-llm-extraction" data-slug="ocr-llm-extraction" data-index="03">
+    <header class="case-head">
+      <p class="mono case-kicker">03 · OCR-to-LLM Extraction with Human Review</p>
+      <h2 class="case-title">Extracting structured records from scanned documents, with review</h2>
+      <p class="case-summary">A page-parallel OCR and LLM pipeline with a mapping cascade that reduces model calls and learns from reviewer corrections.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>OCR</li><li>LLM</li><li>Celery</li><li>RabbitMQ</li><li>SSE</li><li>Document AI</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Scanned batch records had to become structured rows in a database. Files were large, extraction errors were costly, and users needed to see progress and confirm results rather than trust them blindly.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>Presigned direct-to-storage uploads so large files never pass through the API</li><li>A PDF split worker that renders pages and creates all job rows before any OCR task is enqueued</li><li>One OCR task and one LLM extraction task per page, with atomic batch completion</li><li>Bounding-box source lookup so each extracted value can be located on the page</li><li>A mapping cascade (exact match, learned mapping, then batched LLM) that cuts model calls, with reviewer corrections feeding back</li><li>SSE progress and a confirm step that writes rows only after review</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>Browser requests a presigned URL and uploads straight to storage</li><li>Confirm call verifies the object exists and queues a split job</li><li>Split worker renders pages and creates job rows</li><li>OCR task runs per page</li><li>LLM extraction task runs per page and returns validated JSON</li><li>Mapping cascade resolves fields; batch completes atomically</li><li>Reviewer confirms; rows are written; progress is streamed throughout</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Job rows are created before tasks are queued,</strong> so progress is accurate and nothing is lost if a worker dies.</li><li><strong>The mapping cascade tries cheap exact matches first,</strong> because most fields do not need an LLM.</li><li><strong>Credit exhaustion is never retried,</strong> because retrying a quota error only wastes time.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Owned the data capture module that includes this flow; designed and built the extraction and mapping logic. Worked alongside the team on shared infrastructure.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>Celery</li><li>RabbitMQ</li><li>Redis</li><li>Azure Document Intelligence</li><li>Azure OpenAI</li><li>MinIO</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Users get faster, traceable digitisation with a human decision point, and the system gets cheaper and more accurate as corrections accumulate.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-async-report-pipeline" data-slug="async-report-pipeline" data-index="04">
+    <header class="case-head">
+      <p class="mono case-kicker">04 · Async Report Generation and Signed Delivery</p>
+      <h2 class="case-title">Generating large reports in the background and delivering them safely</h2>
+      <p class="case-summary">A queue-driven pipeline that builds Word, PDF and Excel outputs and emails recipients expiring, signed download links.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>RabbitMQ</li><li>FastAPI</li><li>DOCX</li><li>Security</li><li>Async</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Annual quality reports are long, data-heavy documents. Building them inside a web request was not an option, large attachments are unreliable by email, and a failed job must never silently disappear.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>An API that returns 202 only after the job is durably enqueued</li><li>Job context in Redis, with the full payload held in object storage</li><li>A consumer that builds the document through an HTML-to-DOCX engine with a pre-warmed LibreOffice pool and memory limits</li><li>Excel annexures that shrink large documents</li><li>Content-addressed artifacts and HMAC-signed, expiring, revocable download links with an audit log</li><li>Header-counted retries and idempotent consumers</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>UI calls the API; context goes to Redis and payload to object storage</li><li>Job is published durably, then the API returns 202</li><li>Report consumer builds DOCX, optional PDF and Excel annexures</li><li>Completion event carries a content hash</li><li>Completion consumer merges annexures and packages a ZIP</li><li>A signed, expiring link is created for each recipient</li><li>Email worker sends the message; downloads are audit-logged</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Enqueue happens before responding 202,</strong> because a response that outruns the queue can lose work.</li><li><strong>Artifacts are content-addressed,</strong> so a redelivered message finds the existing result instead of rebuilding it.</li><li><strong>Links are signed and expiring,</strong> because emailing large files as attachments is fragile and hard to revoke.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Owned the new report generation module and its delivery path.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>RabbitMQ</li><li>aio-pika</li><li>Redis</li><li>MinIO</li><li>python-docx</li><li>LibreOffice</li><li>Node.js (email worker)</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Large reports ship reliably, retries are safe, and recipients get secure links that can be expired and traced.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-rag-text-to-sql-assistant" data-slug="rag-text-to-sql-assistant" data-index="05">
+    <header class="case-head">
+      <p class="mono case-kicker">05 · RAG and Self-Correcting Text-to-SQL Assistant</p>
+      <h2 class="case-title">A regulatory-compliance chat assistant that answers from documents and a database</h2>
+      <p class="case-summary">A streaming chat service that routes each question to retrieval or SQL, validates generated queries, and cites its sources.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>RAG</li><li>Text-to-SQL</li><li>FastAPI</li><li>Streaming</li><li>LLM</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Users needed natural-language answers over both a document corpus and a structured regulatory database. Answers had to be fast, grounded in sources and safe to run against real data.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>A streaming chat endpoint emitting NDJSON, with a bounded queue, semaphores and Redis-based stop control</li><li>An LLM router that sends each question down the right path, with strict JSON output, timeouts and a safe default</li><li>Hybrid retrieval with semantic reranking and citation extraction, with a fallback when the ranker is unavailable</li><li>Text-to-SQL across three instances, with EXPLAIN validation and error feedback to the model before execution</li><li>Read-only SQL execution paths and failure audit rows for later review</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>Request enters with a bounded queue and concurrency limit</li><li>Language detection and optional translation</li><li>LLM router picks a path: retrieval, citation lookup or data query</li><li>Retrieval path: hybrid search, rerank, extract citations</li><li>SQL path: generate SQL, validate with EXPLAIN, retry with error feedback, run read-only</li><li>Summary step streams the answer as NDJSON</li><li>Latency metrics and failures are logged for review</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Generated SQL is checked with EXPLAIN and corrected with the database's own error,</strong> because that catches most mistakes before any data is touched.</li><li><strong>The router has a safe default path,</strong> so a routing failure still produces an answer.</li><li><strong>Reranker quota exhaustion falls back automatically,</strong> so retrieval degrades instead of failing.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Contributed significantly to this team-built service, including RAG, routing, text-to-SQL and streaming work.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>asyncpg</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li><li>Azure OpenAI</li><li>Azure AI Search</li><li>Vanna</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Users get fast, cited answers over both unstructured and structured sources, and the team gets an audit trail of failed questions to improve the system.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-ai-document-analysis" data-slug="ai-document-analysis" data-index="06">
+    <header class="case-head">
+      <p class="mono case-kicker">06 · AI Document Analysis with Lock-and-Cache De-duplication</p>
+      <h2 class="case-title">Asynchronous document analysis that does not pay for the same LLM call twice</h2>
+      <p class="case-summary">A pipeline that summarises uploaded documents and generates recommendations, using Redis locks and caches to avoid duplicate model calls.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>LLM</li><li>OCR</li><li>Redis</li><li>RabbitMQ</li><li>Node.js</li><li>Python</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Users upload inspection and compliance documents and expect summaries and corrective-action recommendations. The work is slow and expensive, and the same content is often analysed more than once.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>An upload path that runs OCR, performs a quick LLM type check, then responds immediately</li><li>A claim-check pattern: payload in Redis, a small pointer message on RabbitMQ</li><li>A worker that summarises, enriches results through the AI service and generates recommendations under a Redis lock</li><li>Content-hash lock and cache layers so identical work is generated once</li><li>Embedding-based clustering of similar titles to reduce LLM calls</li><li>A separate PDF worker that forks a process per job with timeouts, then emails and cleans up</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>Authenticated upload, then OCR</li><li>LLM type check on the opening text</li><li>Payload stored in Redis; pointer message queued; immediate response</li><li>Worker summarises and enriches the analysis</li><li>Recommendations generated under a content-hash lock with cache</li><li>PDF task queued; PDF worker renders and emails</li><li>Usage is logged and temporary data is cleaned up</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>A content-hash lock-and-cache is used</strong> because concurrent or repeated requests should share one result.</li><li><strong>Claim-check messaging keeps queue messages small and avoids losing large payloads.</strong></li><li><strong>A recommendation failure does not block the rest of the report,</strong> so users still get a useful result.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Worked on and contributed to this pipeline, including the worker, lock-and-cache layers and RabbitMQ migration.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>Node.js</li><li>Express</li><li>RabbitMQ</li><li>Redis</li><li>Azure OpenAI</li><li>OCR</li><li>density clustering (DBSCAN)</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Analysis runs asynchronously, repeat work is not paid for twice, and partial failures do not block delivery.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-multi-tenant-foundation" data-slug="multi-tenant-foundation" data-index="07">
+    <header class="case-head">
+      <p class="mono case-kicker">07 · Multi-Tenant Platform Foundation</p>
+      <h2 class="case-title">Gateway authentication, audit trails and credit metering for a multi-tenant platform</h2>
+      <p class="case-summary">The shared foundation under several services: cookie auth at the gateway, an audited database, and an atomic ledger that meters LLM usage per company.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>Security</li><li>PostgreSQL</li><li>Hasura</li><li>FastAPI</li><li>Observability</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>A platform with many services and many tenants needs one consistent way to authenticate, isolate data, record who did what and cap AI spend, without each service reinventing it.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>A gateway that verifies cookies, refreshes sessions silently, checks a revocation list and injects tenant and user headers</li><li>Per-service OpenAPI specs aggregated at the gateway, and a consistent error envelope with typed error codes</li><li>An audited PostgreSQL and Hasura schema with generic audit triggers, role-driven permissions and idempotent migrations</li><li>An atomic Postgres function and immutable ledger for LLM token credits, with a pre-flight gate and capped deduction</li><li>Metrics and logging through Prometheus, Loki and Grafana</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>Browser calls the gateway with a cookie</li><li>Gateway asks the auth service to verify; session is refreshed if needed</li><li>Revocation list is checked in Redis</li><li>Gateway injects user and tenant headers and forwards the request</li><li>Service reads and writes through Hasura; audit triggers record changes</li><li>Before an LLM call, a credit check runs; after it, usage is deducted atomically</li><li>Ledger rows give a permanent usage history</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Credit deduction runs in one database function,</strong> because that makes it safe under concurrency and keeps the balance from going negative.</li><li><strong>Migrations are written to be re-applied safely,</strong> because deployment re-applies them on restart.</li><li><strong>Privileged endpoints check role from the database, not a client claim,</strong> because claims can be forged.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Contributed to this shared foundation as part of the team, including the credit ledger, gateway authentication work, OpenAPI aggregation, and migration standards.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Hasura</li><li>Redis</li><li>PyJWT</li><li>Docker Compose</li><li>Prometheus</li><li>Loki</li><li>Grafana</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Services share one auth model and one audit approach, and AI usage is metered and capped per tenant.</p></section>
+      </aside>
+    </div>
+  </article>
+  <article class="case" id="case-marketing-analytics-saas" data-slug="marketing-analytics-saas" data-index="08">
+    <header class="case-head">
+      <p class="mono case-kicker">08 · Full-Stack Marketing Analytics SaaS</p>
+      <h2 class="case-title">A full-stack analytics SaaS that turns marketing data into reports and answers</h2>
+      <p class="case-summary">A multi-tenant platform that turns web-analytics and search data into cached dashboards, AI insights, scheduled reports and a grounded team chat, with an MCP server for external AI assistants.</p>
+      <ul class="chips" role="list" aria-label="Tags"><li>Full-stack</li><li>FastAPI</li><li>PostgreSQL</li><li>RAG</li><li>MCP</li><li>AWS</li></ul>
+    </header>
+    <div class="case-grid">
+      <div class="case-main">
+        <section class="case-sec"><h3>The problem</h3><p>Marketing teams and agencies juggle web-analytics, search-performance, site-health and page-speed data across separate tools, then still write insights and monthly reports by hand. They needed one multi-tenant product with per-client access control, automated reporting and answers on demand, including from the AI assistants they already use.</p></section>
+        <section class="case-sec"><h3>What I built</h3><ul class="ticks"><li>A modular FastAPI backend of about 125 endpoints, with strict router, controller, service and repository layers over async SQLAlchemy and PostgreSQL</li><li>Connectors and an ETL pipeline that pull Google Analytics, Search Console, page-speed and site-audit data into dashboard sections cached by property and date range</li><li>AI insights for each dashboard section, cached by a hash of the source data, plus SEO audits and AI-search visibility signals</li><li>Snapshots, branded PDF and Google Sheets exports and public share links, with a separate scheduler for daily syncs and monthly snapshots</li><li>A retrieval-augmented team chat over saved snapshots, streamed over SSE and fanned out over WebSockets, with a cap on concurrent LLM calls</li><li>An MCP (Model Context Protocol) server with 10 tools, so external AI assistants can query a user's analytics behind hashed API keys, timeouts, response truncation and a per-call audit log</li><li>Organisations, roles and per-property access, Google OAuth with encrypted tokens, cookie sessions with refresh rotation, and admin tools with an audited impersonation trail</li><li>On the frontend: scheduled sync, report snapshot comparison and PDF changes, API-key management and usage stats screens, organisation and member property-access views, and Google account reconnect and sign-in handling</li></ul></section>
+        <section class="case-sec case-flow"><h3>How it works</h3>
+          <div class="diagram" data-diagram></div>
+          <ol class="flow-steps"><li>User signs in with Google OAuth; tokens are encrypted at rest and the session lives in HTTP-only cookies</li><li>User links analytics and search properties; organisation roles decide who sees each one</li><li>Scheduler or a manual sync runs the ETL connectors against the Google and site-audit APIs</li><li>Dashboard sections are cached by property and date range; AI insights by a hash of their source data</li><li>A snapshot is saved, then exported to PDF or Sheets or shared through a public link</li><li>Chunk builder turns snapshots into a retrieval knowledge base with deterministic keys</li><li>Team chat streams cited answers over SSE and WebSockets; MCP tools serve external AI assistants</li></ol>
+        </section>
+        <section class="case-sec"><h3>Engineering decisions</h3><ul class="decisions"><li><strong>Scheduled syncs and monthly snapshots run in a separate scheduler process,</strong> because jobs inside an API with several workers would run more than once.</li><li><strong>Dashboards are cached by property and date range, and AI insights by a hash of their source data,</strong> so Google API and LLM calls are only paid for again when the data actually changes.</li><li><strong>Snapshots point at the exact report rows, and chat chunks are built from them with deterministic keys,</strong> so chat answers match what the dashboard shows and rebuilds are safe to repeat.</li><li><strong>External AI access goes through MCP with hashed keys, timeouts, truncated responses and an audit log,</strong> so third-party assistants get useful data without unbounded or untraceable access.</li></ul></section>
+      </div>
+      <aside class="case-aside" aria-label="Summary">
+        <section class="case-meta"><h3 class="mono">My role</h3><p>Full-stack. I led the backend and the full-stack delivery within a small team, and built key frontend features: scheduled sync, report snapshot comparison and PDF changes, API-key (MCP) management and usage stats screens, organisation and member property-access views, and Google account reconnect and sign-in handling.</p></section>
+        <section class="case-meta"><h3 class="mono">Stack</h3><ul class="chips chips--sm" role="list"><li>Python</li><li>FastAPI</li><li>SQLAlchemy (async)</li><li>Alembic</li><li>PostgreSQL</li><li>OpenAI</li><li>Google APIs</li><li>Docker</li><li>AWS</li></ul></section>
+        <section class="case-meta case-outcome"><h3 class="mono">Outcome</h3><p>Live in production. Marketing teams get analytics, site health, reports and AI answers in one place with per-client access control, and can bring the same data into their own AI assistants. The platform ships with per-module handover documentation.</p></section>
+      </aside>
+    </div>
+  </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Jinay Shah, back to top">
+          <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+          <span class="brand-name">Jinay Shah</span>
+        </a>
+        <p class="footer-tag">Problem in. Software out. End to end, with AI in the loop.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#build">Build</a><a href="#work">Work</a><a href="#stack">Stack</a><a href="#experience">Experience</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a class="footer-mail" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry">workwithjinayshah<wbr>@gmail.com</a>
+        <div class="social-row">
+          <a class="icon-btn icon-btn--line" href="https://www.linkedin.com/in/shahjinay0322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="https://github.com/jinshah0322" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="icon-btn icon-btn--line" href="mailto:workwithjinayshah@gmail.com?subject=Project%20enquiry" aria-label="Email workwithjinayshah@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-word" aria-hidden="true">Jinay Shah</p>
+    <div class="footer-base">
+      <p>© <span data-year>2026</span> Jinay Shah. Hand-built HTML, CSS and JavaScript. Self-hosted fonts, no trackers.</p>
+      <p class="js-only footer-kbd">Press <kbd data-kbd-mod>Ctrl</kbd> <kbd>K</kbd> to jump anywhere</p>
+      <a class="to-top" href="#top">Back to top <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Case study detail view -->
+<dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+  <div class="case-dialog-inner">
+    <div class="case-dialog-bar">
+      <span class="mono case-dialog-crumb">Case study <span data-case-pos></span></span>
+      <div class="case-dialog-nav">
+        <a class="icon-btn icon-btn--line" data-case-prev href="#work"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></a>
+        <a class="icon-btn icon-btn--line" data-case-next href="#work"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <button class="icon-btn icon-btn--line" type="button" data-case-close aria-label="Close case study"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="case-dialog-body" data-case-body data-lenis-prevent></div>
+  </div>
+</dialog>
+
+<!-- Command palette -->
+<dialog class="palette" id="palette" aria-label="Command palette">
+  <div class="palette-inner">
+    <div class="palette-search">
+      <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      <input type="text" id="palette-input" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" aria-label="Type a command or search" placeholder="Jump to a section, open a case, copy email..." autocomplete="off" spellcheck="false">
+      <kbd aria-hidden="true">Esc</kbd>
+    </div>
+    <ul class="palette-list" id="palette-list" role="listbox" aria-label="Commands" data-lenis-prevent></ul>
+    <p class="palette-foot mono" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> run</span><span><kbd>Esc</kbd> close</span></p>
+  </div>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
