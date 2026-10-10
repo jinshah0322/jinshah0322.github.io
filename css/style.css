@@ -576,6 +576,13 @@ main:focus { outline: none; }
   content: counter(hw); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
   background: var(--tint); color: var(--accent); font-size: .8rem; font-weight: 700; margin-top: -2px;
 }
+.how-list b { color: var(--ink); font-weight: 650; }
+
+/* Key features list inside "What it is" */
+.what-list { display: grid; gap: 8px; }
+.what-list li { position: relative; padding-left: 18px; color: var(--ink-2); line-height: 1.5; text-wrap: pretty; }
+.what-list li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.what-list b { color: var(--ink); font-weight: 650; }
 
 /* Built with */
 .stk { display: grid; gap: 14px; }
@@ -1138,7 +1145,7 @@ main:focus { outline: none; }
 /* ---------- Hard problems ---------- */
 .tp-hard { container-type: inline-size; }
 .hps { display: grid; gap: clamp(12px, 1.3vw, 16px); grid-template-columns: minmax(0, 1fr); }
-@container (min-width: 760px) { .hps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@container (min-width: 760px) { .hps { grid-template-columns: repeat(3, minmax(0, 1fr)); } .hps-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .hp { padding: clamp(18px, 2vw, 24px); display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .hp-n { font-family: var(--mono); font-size: .76rem; font-weight: 600; color: var(--ink-3); }
 .hp-k { font-size: .74rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--clay-ink); }
