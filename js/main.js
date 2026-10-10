@@ -403,18 +403,20 @@
     });
   });
 
-  /* ---------- Copy email ---------- */
+  /* ---------- Copy email / phone ---------- */
   const status = document.querySelector(".copy-status");
   document.querySelectorAll("[data-copy]").forEach((b) => {
     const label = b.querySelector(".copy-label");
     const original = label.textContent;
+    const what = b.dataset.copyName || "Text";
     b.addEventListener("click", async () => {
       let ok = false;
       try { await navigator.clipboard.writeText(b.dataset.copy); ok = true; } catch (_) { ok = false; }
       label.textContent = ok ? "Copied" : "Press Ctrl+C";
-      if (status) status.textContent = ok ? "Email address copied" : "Copy failed, select the address to copy it";
+      if (status) status.textContent = ok ? what + " copied" : "Copy failed, select the " + what.toLowerCase() + " to copy it";
       if (!ok) {
-        const link = document.querySelector(".mail-link");
+        const row = b.closest(".contact-mail");
+        const link = row ? row.querySelector(".mail-link") : null;
         const sel = window.getSelection();
         if (link && sel) { const r = document.createRange(); r.selectNodeContents(link); sel.removeAllRanges(); sel.addRange(r); }
       }
