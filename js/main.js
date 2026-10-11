@@ -195,7 +195,8 @@
     });
     const heads = Array.from(grid.querySelectorAll(".dg-lh")).map((el) => { const r = el.getBoundingClientRect(); return { l: r.left - g.left, t: r.top - g.top, r: r.right - g.left, b: r.bottom - g.top }; });
     const obstacles = all.concat(heads);
-    const arrows = (grid.dataset.arrows || "").split("|").filter(Boolean).map((s, k) => { const [f, t] = s.split(">"); return { f: boxes[f], t: boxes[t], k }; }).filter((a) => a.f && a.t);
+    // "a>b*" marks an outside connection: drawn dashed and kept on the outer lane of each channel
+    const arrows = (grid.dataset.arrows || "").split("|").filter(Boolean).map((s, k) => { const [f, t0] = s.split(">"); const ext = t0.endsWith("*"); const t = ext ? t0.slice(0, -1) : t0; return { f: boxes[f], t: boxes[t], k, ext }; }).filter((a) => a.f && a.t);
     const ports = {}; // key box|side -> list
     const addPort = (box, side, arrow, end) => { const key = box.id + "|" + side; (ports[key] = ports[key] || []).push({ arrow, end }); };
     let minL = Infinity, maxR = -Infinity, maxB = 0;
@@ -227,6 +228,21 @@
       });
       return best === null ? maxB + 16 : best;
     };
+    // narrow layout: each arrow runs in the left or right gutter; pick sides so spans never partly overlap (which forces a crossing)
+    const side = new Map();
+    if (!wide) {
+      const span = (a) => [Math.min(a.f.idx, a.t.idx), Math.max(a.f.idx, a.t.idx)];
+      const clash = (a, b) => { const [p, q] = span(a), [u, v] = span(b); return (p < u && u < q && q < v) || (u < p && p < v && v < q); };
+      const placed = { l: [], r: [] };
+      arrows.filter((a) => !(Math.abs(a.f.idx - a.t.idx) === 1 && a.f.c === a.t.c))
+        .sort((a, b) => (span(b)[1] - span(b)[0]) - (span(a)[1] - span(a)[0]))
+        .forEach((a) => {
+          let sd = a.t.t >= a.f.b - 1 ? "l" : "r";
+          const alt = sd === "l" ? "r" : "l";
+          if (placed[sd].some((o) => clash(o, a)) && !placed[alt].some((o) => clash(o, a))) sd = alt;
+          placed[sd].push(a); side.set(a, sd);
+        });
+    }
     arrows.forEach((a) => {
       const S = a.f, T = a.t;
       if (wide) {
@@ -241,7 +257,7 @@
         const adjacent = Math.abs(S.idx - T.idx) === 1 && S.c === T.c;
         const below = T.t >= S.b - 1;
         if (adjacent) { a.kind = "v"; a.sOut = below ? "b" : "t"; a.tIn = below ? "t" : "b"; }
-        else { a.kind = "gut"; a.sOut = a.tIn = below ? "l" : "r"; }
+        else { a.kind = "gut"; a.sOut = a.tIn = side.get(a) || (below ? "l" : "r"); }
       }
       addPort(S, a.sOut, a, "s"); addPort(T, a.tIn, a, "t");
     });
@@ -251,7 +267,13 @@
       const b = boxes[id], list = ports[key];
       const other = (p) => (p.end === "s" ? p.arrow.t : p.arrow.f);
       const horiz = side === "t" || side === "b";
-      list.sort((p, q) => (horiz ? other(p).cx - other(q).cx : other(p).cy - other(q).cy));
+      if (horiz || wide) list.sort((p, q) => (horiz ? other(p).cx - other(q).cx : other(p).cy - other(q).cy));
+      else {
+        // gutter ports: links to boxes above sit on top, links below underneath; within each group the farther link
+        // (on the outer lane) takes the port nearer the middle so it never crosses a nearer one
+        const grp = (p) => (other(p).cy < b.cy ? 0 : 1);
+        list.sort((p, q) => grp(p) - grp(q) || other(q).cy - other(p).cy);
+      }
       const n = list.length;
       list.forEach((p, i) => {
         const f = n === 1 ? 0.5 : 0.28 + (0.44 * i) / (n - 1);
@@ -271,7 +293,8 @@
         a.v1 = { key: "g" + a.sOut, lo: a.p0[1], hi: a.p1[1], a }; segs.push(a.v1);
       }
     });
-    levels(segs, 6);
+    levels(segs.filter((sg) => !sg.a.ext), 6);
+    segs.filter((sg) => sg.a.ext).forEach((sg) => { sg.lv = 1 + Math.max(-1, ...segs.filter((o) => o !== sg && !o.a.ext && o.key === sg.key && overlaps(o.lo, o.hi, sg.lo, sg.hi, 6)).map((o) => o.lv)); });
     const nLv = {};
     segs.forEach((s) => { nLv[s.key] = Math.max(nLv[s.key] || 0, s.lv + 1); });
     const segX = (s) => {
@@ -307,8 +330,8 @@
       }
       const path = document.createElementNS(SVGNS, "path");
       path.setAttribute("d", rounded(pts, 7));
-      path.setAttribute("pathLength", "1");
-      path.setAttribute("class", "ln");
+      if (a.ext) path.setAttribute("class", "ln ext");
+      else { path.setAttribute("pathLength", "1"); path.setAttribute("class", "ln"); }
       path.style.setProperty("--k", a.k);
       const hd = document.createElementNS(SVGNS, "path");
       const s = HEAD, w = 4.2;
